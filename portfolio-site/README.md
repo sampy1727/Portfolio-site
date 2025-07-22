@@ -20,5 +20,7 @@ A sleek and modern personal portfolio website built using **React**, **Tailwind 
 - [Framer Motion](https://www.framer.com/motion/)
 - [Lucide Icons](https://lucide.dev/)
 
+## 📸 Demo
 
+Check it out live: [https://portfolio-site-sameer-luckys-projects.vercel.app/](https://portfolio-site-sameer-luckys-projects.vercel.app/)
 
