@@ -352,16 +352,7 @@ export default function App() {
             </div>
           </div>
 
-          {/* Enhanced scroll indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2">
-            <div className="text-sm text-white/60 animate-pulse">Scroll to explore</div>
-            <div className="relative">
-              <div className="w-8 h-12 border-2 border-white/30 rounded-full flex justify-center overflow-hidden">
-                <div className="w-2 h-3 bg-gradient-to-b from-yellow-400 to-purple-500 rounded-full mt-2 animate-bounce" />
-              </div>
-              <ArrowDown className="w-4 h-4 text-white/40 mt-2 animate-bounce" style={{ animationDelay: '0.5s' }} />
-            </div>
-          </div>
+         
         </section>
 
         {/* About Section */}
