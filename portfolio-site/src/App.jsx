@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Github, Linkedin, Mail, ExternalLink, Code, Brain, Sparkles, ArrowDown, Star, Zap } from "lucide-react";
-
+import ResumeButton from "./components/resume";
 const projects = [
   {
     title: "My Portfolio",
@@ -321,9 +321,9 @@ export default function App() {
 
             <div className="flex justify-center gap-8 mb-12">
               {[
-                { Icon: Github, href: "https://github.com/yourusername", label: "GitHub", color: "hover:text-white" },
-                { Icon: Linkedin, href: "https://linkedin.com/in/yourusername", label: "LinkedIn", color: "hover:text-blue-400" },
-                { Icon: Mail, href: "mailto:sameer@email.com", label: "Email", color: "hover:text-red-400" }
+                { Icon: Github, href: "https://github.com/Sampy1727", label: "GitHub", color: "hover:text-white" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/in/sameer-lucky-05901124b/", label: "LinkedIn", color: "hover:text-blue-400" },
+                { Icon: Mail, href: "mailto:sameerlucky1729@email.com", label: "Email", color: "hover:text-red-400" }
               ].map(({ Icon, href, label, color }, index) => (
                 <a
                   key={label}
@@ -334,8 +334,11 @@ export default function App() {
                   style={{ 
                     animationDelay: `${index * 200}ms`,
                     transform: `translateY(${Math.sin(Date.now() * 0.001 + index) * 5}px)`
-                  }}
+                  }
+                 
+                }
                 >
+                
                   <Icon className="w-8 h-8 transition-all duration-300 group-hover:scale-125" />
                   <span className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 text-sm bg-black/90 px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap">
                     {label}
@@ -352,7 +355,7 @@ export default function App() {
             </div>
           </div>
 
-         
+
         </section>
 
         {/* About Section */}
@@ -375,7 +378,9 @@ export default function App() {
                 My journey involves building scalable applications and exploring cutting-edge AI technologies
                 to solve real-world problems that make a meaningful impact.
               </p>
-
+              <div className="mt-4">
+    <ResumeButton />
+  </div>
               {[
                 { Icon: Code, title: "Clean Code Advocate", desc: "Writing maintainable, scalable solutions", color: "yellow" },
                 { Icon: Brain, title: "AI Enthusiast", desc: "Exploring machine learning & neural networks", color: "purple" }
